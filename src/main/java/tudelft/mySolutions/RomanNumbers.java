@@ -4,7 +4,7 @@ public class RomanNumbers {
 
     private int convertedNumber=0;
 
-    public void convertRomanNumber(String number){
+    public int convertRomanNumber(String number){
 
         int size=number.length();
         int currentValue,nextValue;
@@ -26,6 +26,7 @@ public class RomanNumbers {
         }
 
         System.out.println(number +"-->"+convertedNumber);
+        return convertedNumber;
     }
 
     public enum RomanChars{
